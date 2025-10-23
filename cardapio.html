@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Sabor de Pizza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+       
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="https://www.sabordepizzanl.com.br/fotos/logo2.png" alt="Logo Sabor de Pizza">
+                <h1>Sabor de Pizza</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#" class="active">Cardápio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Cardápio -->
+    <section class="hero-cardapio">
+        <div class="hero-cardapio-content">
+            <h2>Cardápio Completo</h2>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="categorias container">
+        <div class="categorias-buttons">
+            <button class="categoria-btn active" data-categoria="pizzas">Pizzas</button>
+            <a href="./bebidas.html" class="categoria-btn" data-categoria="bebidas">Bebidas</a>
+            <button class="categoria-btn" data-categoria="promocoes">Promoções</button>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section class="cardapio container">
+        <h2 class="section-title">Nosso Cardápio</h2>
+        
+        <!-- Pizzas Salgadas -->
+        <div class="categoria-cardapio" id="pizzas">
+            <h3 class="categoria-title"><i class="fas fa-pizza-slice"></i> Pizzas Salgadas</h3>
+            <div class="itens-cardapio">
+                <div class="item-cardapio">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Pizza Margherita">
+                    </div>
+                    <div class="item-info">
+                        <h3>Margherita</h3>
+                        <p>Molho de tomate, mussarela, tomate fresco e manjericão</p>
+                        <div class="item-preco">
+                            <span class="price">R$ 39,90</span>
+                            <a href="" target="_blank" class="btn-adicionar">+</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-cardapio">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Pizza Pepperoni">
+                    </div>
+                    <div class="item-info">
+                        <h3>Pepperoni</h3>
+                        <p>Molho de tomate, mussarela e pepperoni fatiado</p>
+                        <div class="item-preco">
+                            <span class="price">R$ 45,90</span>
+                            <button class="btn-adicionar">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-cardapio">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Pizza Quatro Queijos">
+                    </div>
+                    <div class="item-info">
+                        <h3>Quatro Queijos</h3>
+                        <p>Molho de tomate, mussarela, parmesão, gorgonzola e provolone</p>
+                        <div class="item-preco">
+                            <span class="price">R$ 49,90</span>
+                            <button class="btn-adicionar">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-cardapio">
+                    <div class="item-img">
+                        <img src="https://th.bing.com/th/id/OIP._gJ8bMqmBgd0N_rZegugCQHaGI?w=240&h=198&c=7&r=0&o=7&pid=1.7&rm=3" alt="Pizza Calabresa">
+                    </div>
+                    <div class="item-info">
+                        <h3>Calabresa</h3>
+                        <p>Molho de tomate, mussarela, calabresa fatiada e cebola</p>
+                        <div class="item-preco">
+                            <span class="price">R$ 42,90</span>
+                            <button class="btn-adicionar">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-cardapio">
+                    <div class="item-img">
+                        <img src="https://th.bing.com/th/id/OIP.FHhE9Y2VbWNE_z9DGpzoegHaEj?w=276&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Pizza Portuguesa">
+                    </div>
+                    <div class="item-info">
+                        <h3>Portuguesa</h3>
+                        <p>Molho de tomate, mussarela, presunto, ovos, cebola e azeitonas</p>
+                        <div class="item-preco">
+                            <span class="price">R$ 47,90</span>
+                            <button class="btn-adicionar">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-cardapio">
+                    <div class="item-img">
+                        <img src="https://th.bing.com/th/id/OIP.80hdppYVpNvdCh8tD2D_eQHaE8?w=241&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Pizza Frango com Catupiry">
+                    </div>
+                    <div class="item-info">
+                        <h3>Frango com Catupiry</h3>
+                        <p>Molho de tomate, frango desfiado e catupiry</p>
+                        <div class="item-preco">
+                            <span class="price">R$ 46,90</span>
+                            <button class="btn-adicionar">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pizzas Doces -->
+        <div class="categoria-cardapio">
+            <h3 class="categoria-title"><i class="fas fa-ice-cream"></i> Pizzas Doces</h3>
+            <div class="itens-cardapio">
+                <div class="item-cardapio">
+                    <div class="item-img">
+                        <img src="https://th.bing.com/th/id/OIP.mwzkOhJPi6GO75kfxH1IJAHaEK?w=293&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Pizza Chocolate com Morango">
+                    </div>
+                    <div class="item-info">
+                        <h3>Chocolate com Morango</h3>
+                        <p>Chocolate preto, morangos frescos e leite condensado</p>
+                        <div class="item-preco">
+                            <span class="price">R$ 52,90</span>
+                            <button class="btn-adicionar">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-cardapio">
+                    <div class="item-img">
+                        <img src="https://th.bing.com/th/id/OIP.m3xZ5-2CR9z-eTFSDsjwxQHaEy?w=246&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Pizza Romeu e Julieta">
+                    </div>
+                    <div class="item-info">
+                        <h3>Romeu e Julieta</h3>
+                        <p>Goiabada cremosa e queijo mussarela</p>
+                        <div class="item-preco">
+                            <span class="price">R$ 44,90</span>
+                            <button class="btn-adicionar">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-cardapio">
+                    <div class="item-img">
+                        <img src="https://th.bing.com/th/id/OIP.Qd6w3jJw1Or8g49TYZzRYgHaEK?w=333&h=187&c=7&r=0&o=7&pid=1.7&rm=3" alt="Pizza Banoffe">
+                    </div>
+                    <div class="item-info">
+                        <h3>Banoffe</h3>
+                        <p>Doce de banana, carameloo e chantilly</p>
+                        <div class="item-preco">
+                            <span class="price">R$ 54,90</span>
+                            <button class="btn-adicionar">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+               
+            
+        
+    
+
+
+
+    </section>
+
+    <!-- Promoções -->
+    <section class="promocoes">
+        <div class="container">
+            <h2 class="section-title">Promoções Especiais</h2>
+            <div class="promo-cards">
+                <div class="promo-card">
+                    <div class="promo-tag">-20%</div>
+                    <div class="promo-img">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Promoção 1">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Combo Família</h3>
+                        <p>2 pizzas grandes + 1 refrigerante 2L</p>
+                        <div class="promo-price">
+                            <span class="old-price">R$ 99,80</span>
+                            <span class="new-price">R$ 79,90</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="promo-tag">-30%</div>
+                    <div class="promo-img">
+                        <img src="https://images.unsplash.com/photo-1595857812086-8cdfc1e6e67b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Promoção 2">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Quinta do Sabor</h3>
+                        <p>Todas as pizzas médias por preço único</p>
+                        <div class="promo-price">
+                            <span class="old-price">R$ 49,90</span>
+                            <span class="new-price">R$ 34,90</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="promo-tag">-15%</div>
+                    <div class="promo-img">
+                        <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Promoção 3">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Pizza + Sobremesa</h3>
+                        <p>1 pizza grande + 1 sobremesa da casa</p>
+                        <div class="promo-price">
+                            <span class="old-price">R$ 69,90</span>
+                            <span class="new-price">R$ 59,90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Endereço</h3>
+                    <p>Rua Vila Maria, 99</p>
+                    <p>Bairro Retiro</p>
+                    <p>Nova Lima - MG</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Terça a Quinta: 18h - 23h30</p>
+                    <p>Sexta a Domingo: 18h - 00h00</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>Telefone: (11) 3456-7890</p>
+                    <p>WhatsApp: (11) 98765-4321</p>
+                    <p>Email: contato@sabordepizza.com.br</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/sabordepizzanl"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5531995904002"><i class="fab fa-whatsapp"></i></a>
+                        <a href="contato@sabordepizzanl.com.br"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sabor de Pizza - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para filtro de categorias
+        document.addEventListener('DOMContentLoaded', function() {
+            const botoesCategorias = document.querySelectorAll('.categoria-btn');
+            
+            botoesCategorias.forEach(botao => {
+                botao.addEventListener('click', function() {
+                    // Remove a classe active de todos os botões
+                    botoesCategorias.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Adiciona a classe active ao botão clicado
+                    this.classList.add('active');
+                    
+                    // Aqui iria a lógica para filtrar os itens do cardápio
+                    // Por simplicidade, estamos apenas mudando o botão ativo
+                    const categoria = this.getAttribute('data-categoria');
+                    console.log(`Categoria selecionada: ${categoria}`);
+                    // Em uma implementação real, aqui você mostraria/ocultaria os itens conforme a categoria
+                });
+            });
+        });
+    </script>
+</body>
+</html>

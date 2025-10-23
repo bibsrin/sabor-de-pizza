@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Sabor de Pizza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+       
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="https://www.sabordepizzanl.com.br/fotos/logo2.png" alt="Logo Sabor de Pizza">
+                <h1>Sabor de Pizza</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#" class="active">Cardápio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Cardápio -->
+    <section class="hero-cardapio">
+        <div class="hero-cardapio-content">
+            <h2>Cardápio Completo</h2>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="categorias container">
+        <div class="categorias-buttons">
+            <a href="./cardapio.html" class="categoria-btn active" data-categoria="pizzas">Pizzas</a>
+            <button class="categoria-btn" data-categoria="bebidas">Bebidas</button>
+            <button class="categoria-btn" data-categoria="promocoes">Promoções</button>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section class="cardapio container">
+        <h2 class="section-title">Nosso Cardápio</h2>
+        
+        <!-- Pizzas Salgadas -->
+        <div class="categoria-cardapio" id="pizzas">
+            <h3 class="categoria-title"><i class="fas fa-wine-bottle "></i> Bebidas</h3>
+            <div class="itens-cardapio">
+                <div class="item-cardapio">
+                    <div class="item-img">
+                        <img src="https://th.bing.com/th/id/OIP.zfCjLXXMqDuC4UaU0IrggwHaHa?w=196&h=196&c=7&r=0&o=5&pid=1.7" alt="Coca Cola-2L">
+                    </div>
+                    <div class="item-info">
+                        <h3>Coca Cola-2L</h3>
+                        <div class="item-preco">
+                            <span class="price">R$12,90</span>
+                            <a href="" target="_blank" class="btn-adicionar">+</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-cardapio">
+                    <div class="item-img">
+                        <img src="https://th.bing.com/th/id/OIP.tZTaZddoUpe_24FnUVHH2wHaG-?w=212&h=200&c=7&r=0&o=7&pid=1.7&rm=3" alt="Guaraná-2L">
+                    </div>
+                    <div class="item-info">
+                        <h3>Guaraná-2L</h3>
+                        <div class="item-preco">
+                            <span class="price">R$ 12,90</span>
+                            <button class="btn-adicionar">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-cardapio">
+                    <div class="item-img">
+                        <img src="https://th.bing.com/th/id/OIP.WwYreRSPllxSoRd6hsXXXwHaHa?w=214&h=214&c=7&r=0&o=5&pid=1.7" alt="Fanta Laranja-2L">
+                    </div>
+                    <div class="item-info">
+                        <h3>Fanta Laranja-2L</h3>
+                        <div class="item-preco">
+                            <span class="price">R$ 12,90</span>
+                            <button class="btn-adicionar">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Endereço</h3>
+                    <p>Rua Vila Maria, 99</p>
+                    <p>Bairro Retiro</p>
+                    <p>Nova Lima - MG</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Terça a Quinta: 18h - 23h30</p>
+                    <p>Sexta a Domingo: 18h - 00h00</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>Telefone: (31) 3694-4001</p>
+                    <p>WhatsApp: (31) 99590-4002</p>
+                    <p>Email: contato@sabordepizzanl.com.br</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/sabordepizzanl"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5531995904002"><i class="fab fa-whatsapp"></i></a>
+                        <a href="contato@sabordepizzanl.com.br"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sabor de Pizza - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para filtro de categorias
+        document.addEventListener('DOMContentLoaded', function() {
+            const botoesCategorias = document.querySelectorAll('.categoria-btn');
+            
+            botoesCategorias.forEach(botao => {
+                botao.addEventListener('click', function() {
+                    // Remove a classe active de todos os botões
+                    botoesCategorias.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Adiciona a classe active ao botão clicado
+                    this.classList.add('active');
+                    
+                    // Aqui iria a lógica para filtrar os itens do cardápio
+                    // Por simplicidade, estamos apenas mudando o botão ativo
+                    const categoria = this.getAttribute('data-categoria');
+                    console.log(`Categoria selecionada: ${categoria}`);
+                    // Em uma implementação real, aqui você mostraria/ocultaria os itens conforme a categoria
+                });
+            });
+        });
+    </script>
+</body>
+</html>
